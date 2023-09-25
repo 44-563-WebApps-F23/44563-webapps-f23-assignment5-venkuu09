@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cities to explore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .col-sm-2 {
+        background-color: #faf3f3;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .col-md {
+        background-color: #668ab0;
+        padding: 10px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    //Sytle for image responsive and thumbnail
+    .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Style for thumbnails */
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .img-thumbnail {
+            max-width: 100%;
+            height: 200;
+            width: 100px; /* Adjust the width of the thumbnails as needed */
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+  </style>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Visit cities with Venkatesh Mudam</h1>
+<br>
+    <div class="container">
+      <h5>Below are the 6 must visit cities to explore.</h5>
+      <br>
+      
+      <div class="row">
+          <div class="col-sm-2">M</div>
+          <div class="col-sm-2">U</div>
+          <div class="col-sm-2">D</div>
+          <div class="col-sm-2">A</div>
+          <div class="col-sm-2">M</div>
+          <div class="col-sm-2">V</div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md">Mumbai</div>
+          <div class="col-md">Uttar pradesh</div>
+          <div class="col-md">Delhi</div>
+          <div class="col-md">Agra</div>
+          <div class="col-md">Miami</div>
+          <div class="col-md">Vietnam</div>
+      </div>
+  </div>
+
+  <div class="container">
+    <img src="mumbai.jpg" class="img-fluid" alt="Mumbai.jpg" height="400" width="400">
+    <img src="delhi.jpg" class="img-fluid" alt="Delhi.jpg" height="400" width="400">
+    <img src="agra.jpg"  class="img-fluid" alt="Agra.jpg" height="400" width="400">
+  </div>
+  <div class="thumbnail-container">
+    <img src="mumbai.jpg" class="img-thumbnail" alt="Mumbai.jpg" height="400" width="400">
+    <img src="delhi.jpg" class="img-thumbnail" alt="Delhi.jpg" height="400" width="400">
+    <img src="agra.jpg" class="img-thumbnail" alt="Agra.jpg" height="400" width="400">
+  </div>
+<br><br>
+<h5>Cities names breaks first</h5>
+    <p>When the screen size is reduced, you'll notice that the city names are the first to wrap to a new line. Bootstrap's responsive design adjusts the column sizes based on the screen width. When size of the browser reduces, "col-md" class columns will stack vertically as these are medium sized screens, while the "col-sm-2" columns will maintain their horizontal arrangement for a longer duration.</p>
+</body>.
+</html>
