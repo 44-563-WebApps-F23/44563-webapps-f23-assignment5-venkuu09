@@ -42,7 +42,7 @@
   </style>
   </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: larger; font-size: larger;" >
+  <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-weight: bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: larger;" >
     <div class="container-fluid">
       <a class="navbar-brand" href="cities.html">A Few Cities</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -203,6 +203,23 @@
   <br>
   <br>
   <br>
+
+  <form>
+    <div class="form-group">
+        <label for="Email" class="form-label">Email address :</label>
+        <input type="email" class="form-control" id="Email" placeholder="Enter Your Email Address" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div><br>
+    <div class="form-group">
+        <label for="City" class="form-label">City :</label>
+        <input type="text" class="form-control" id="CityInput" placeholder="Enter Your City">
+    </div><br>
+    <div class="form-check">
+        <label class="form-check-label" for="Check">Sign up for newsletter?</label>
+        <input type="checkbox" class="form-check-input" id="Check">
+    </div><br>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
 
   </body>
 </html>
