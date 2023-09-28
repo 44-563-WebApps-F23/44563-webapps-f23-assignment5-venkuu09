@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
   <style>
     .col-sm-2 {
         background-color: #faf3f3;
@@ -19,43 +27,21 @@
         font-weight: bold;
     }
 
-    //Sytle for image responsive and thumbnail
-    .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .img-fluid{
+      height: 400px;
+      width: 350px;
+    }
+    .img-thumbnail{
+      height: 400px;
+      width: 350px;
+    }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        /* Style for thumbnails */
-        .thumbnail-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .img-thumbnail {
-            max-width: 100%;
-            height: 200;
-            width: 100px; /* Adjust the width of the thumbnails as needed */
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+    caption {
+      font-weight: bold;
+    }
   </style>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
+  </head>
 <body>
     <h1>Visit cities with Venkatesh Mudam</h1>
 <br>
@@ -81,19 +67,107 @@
           <div class="col-md">Vietnam</div>
       </div>
   </div>
-
+<br>
+  <h5>Cities names breaks first</h5>
+    <p>When the screen size is reduced, you'll notice that the city names are the first to wrap to a new line. Bootstrap's responsive design adjusts the column sizes based on the screen width. When size of the browser reduces, "col-md" class columns will stack vertically as these are medium sized screens, while the "col-sm-2" columns will maintain their horizontal arrangement for a longer duration.</p>
+<br>
+<h4 style="text-align: center">Exploring Cities</h4>
   <div class="container">
-    <img src="mumbai.jpg" class="img-fluid" alt="Mumbai.jpg" height="400" width="400">
-    <img src="delhi.jpg" class="img-fluid" alt="Delhi.jpg" height="400" width="400">
-    <img src="agra.jpg"  class="img-fluid" alt="Agra.jpg" height="400" width="400">
+    <img src="mumbai.jpg" class="img-fluid" alt="Mumbai">
+    <img src="delhi.jpg" class="img-fluid" alt="Delhi">
+    <img src="agra.jpg"  class="img-fluid" alt="Agra">
   </div>
-  <div class="thumbnail-container">
-    <img src="mumbai.jpg" class="img-thumbnail" alt="Mumbai.jpg" height="400" width="400">
-    <img src="delhi.jpg" class="img-thumbnail" alt="Delhi.jpg" height="400" width="400">
-    <img src="agra.jpg" class="img-thumbnail" alt="Agra.jpg" height="400" width="400">
+  <br>
+  <div class="container">
+    <img src="mumbai.jpg" class="img-thumbnail" alt="Mumbai">
+    <img src="delhi.jpg" class="img-thumbnail" alt="Delhi">
+    <img src="agra.jpg" class="img-thumbnail" alt="Agra">
   </div>
 <br><br>
-<h5>Cities names breaks first</h5>
-    <p>When the screen size is reduced, you'll notice that the city names are the first to wrap to a new line. Bootstrap's responsive design adjusts the column sizes based on the screen width. When size of the browser reduces, "col-md" class columns will stack vertically as these are medium sized screens, while the "col-sm-2" columns will maintain their horizontal arrangement for a longer duration.</p>
-</body>.
+
+      <table class="table table-hover table-striped border border-secondary border-4">
+      <caption style="text-align: center">Table with Cities, Rivers and Trees</caption>
+      <thead class="table-primary">
+        <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+            <th scope="col">Tree</th>
+        </tr>
+     </thead>
+
+     <tbody>
+      <tr class ="table-warning">
+          <th scope="row">M</th>
+          <td>Mumbai</td>
+          <td>Murray River</td>
+          <td>Mango Tree</td>
+      </tr>
+      <tr class="table-light">
+          <th scope="row">U</th>
+          <td>Uttar pradesh</td>
+          <td>Ucayali River</td>
+          <td>Umbrella Pine</td>
+      </tr>
+      <tr class="table-success">
+          <th scope="row">D</th>
+          <td>Delhi</td>
+          <td>Danube River</td>
+          <td>Douglas Fir</td>
+      </tr>
+      <tr class="table-secondary">
+          <th scope="row">A</th>
+          <td>Agra</td>
+          <td>Amazon River</td>
+          <td>Apple tree</td>
+      </tr>
+      <tr class="table-info">
+          <th scope="row">M</th>
+          <td>Miami</td>
+          <td>Mississippi River</td>
+          <td>Mangrove Tree</td>
+      </tr>
+      <tr class="table-danger">
+          <th scope="row" class="table-active">V</th>
+          <td class="table-active">Vietnam</td>
+          <td class="table-active">Victoria Nile</td>
+          <td class="table-active">Valley Oak</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<br>
+  <h4 style="text-align: center; color:red;">Buttons and Button Groups</h4><br>
+  <label>Buttons</label>
+  <br>
+  <button class="btn">M</button>
+  <button class="btn">U</button>
+  <button class="btn">D</button>
+  <button class="btn">A</button>
+  <button class="btn">M</button>
+  <button class="btn">V</button>
+  <br>
+
+  <label>Button Groups</label><br>
+  <div>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-lable="First group">
+        <button type="button" class="btn btn-success">M</button>
+        <button type="button" class="btn btn-success">U</button>
+        <button type="button" class="btn btn-success">D</button>
+      </div>
+
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-warning">A</button>
+        <button type="button" class="btn btn-warning">M</button>
+      </div>
+
+      <div class="btn-group me-2" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-danger">V</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  </body>
 </html>
